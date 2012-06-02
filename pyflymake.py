@@ -191,10 +191,6 @@ class PyflakesRunner(LintRunner):
         return data
 
     @property
-    def stream(self):
-        return 'stderr'
-
-    @property
     def run_flags(self):
         return ('-c',
                 ('import sys;'
